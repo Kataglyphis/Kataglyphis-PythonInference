@@ -76,8 +76,8 @@ name = "anyio"
 version = "4.12.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "idna" },
-    { name = "typing-extensions", marker = "python_full_version < '3.13'" },
+    { name = "idna", marker = "platform_machine != 'riscv64'" },
+    { name = "typing-extensions", marker = "python_full_version < '3.13' and platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/96/f0/5eb65b2bb0d09ac6776f2eb54adee6abe8228ea05b20a5ad0e4945de8aac/anyio-4.12.1.tar.gz", hash = "sha256:41cfcc3a4c85d3f05c932da7c26d0201ac36f72abd4435ba90d0464a3ffed703", size = 228685, upload-time = "2026-01-06T11:45:21.246Z" }
 wheels = [
@@ -1032,7 +1032,7 @@ name = "granian"
 version = "2.7.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "click" },
+    { name = "click", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/57/19/d4ea523715ba8dd2ed295932cc3dda6bb197060f78aada6e886ff08587b2/granian-2.7.2.tar.gz", hash = "sha256:cdae2f3a26fa998d41fefad58f1d1c84a0b035a6cc9377addd81b51ba82f927f", size = 128969, upload-time = "2026-02-24T23:04:23.314Z" }
 wheels = [
@@ -1108,7 +1108,7 @@ wheels = [
 
 [package.optional-dependencies]
 reload = [
-    { name = "watchfiles" },
+    { name = "watchfiles", marker = "platform_machine != 'riscv64'" },
 ]
 
 [[package]]
@@ -1220,8 +1220,8 @@ name = "httpcore"
 version = "1.0.9"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "certifi" },
-    { name = "h11" },
+    { name = "certifi", marker = "platform_machine != 'riscv64'" },
+    { name = "h11", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/06/94/82699a10bca87a5556c9c59b5963f2d039dbd239f25bc2a63907a05a14cb/httpcore-1.0.9.tar.gz", hash = "sha256:6e34463af53fd2ab5d807f399a9b45ea31c3dfa2276f15a2c3f00afff6e176e8", size = 85484, upload-time = "2025-04-24T22:06:22.219Z" }
 wheels = [
@@ -1233,10 +1233,10 @@ name = "httpx"
 version = "0.28.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "anyio" },
-    { name = "certifi" },
-    { name = "httpcore" },
-    { name = "idna" },
+    { name = "anyio", marker = "platform_machine != 'riscv64'" },
+    { name = "certifi", marker = "platform_machine != 'riscv64'" },
+    { name = "httpcore", marker = "platform_machine != 'riscv64'" },
+    { name = "idna", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/b1/df/48c586a5fe32a0f01324ee087459e112ebb7224f646c0b5023f5e79e9956/httpx-0.28.1.tar.gz", hash = "sha256:75e98c5f16b0f35b567856f597f06ff2270a374470a5c2392242528e3e3e42fc", size = 141406, upload-time = "2024-12-06T15:37:23.222Z" }
 wheels = [
@@ -2295,11 +2295,11 @@ name = "onnxruntime-gpu"
 version = "1.24.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "flatbuffers" },
-    { name = "numpy" },
-    { name = "packaging" },
-    { name = "protobuf" },
-    { name = "sympy" },
+    { name = "flatbuffers", marker = "platform_machine != 'riscv64'" },
+    { name = "numpy", marker = "platform_machine != 'riscv64'" },
+    { name = "packaging", marker = "platform_machine != 'riscv64'" },
+    { name = "protobuf", marker = "platform_machine != 'riscv64'" },
+    { name = "sympy", marker = "platform_machine != 'riscv64'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9f/13/e080d758f2b60f71abe518c707135fb121d6a3019e0761ead89b5283ac3d/onnxruntime_gpu-1.24.4-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:c2a698659271c28220b3f56fe9b63f70eae3b3c36afa544201bf750b929a36dc", size = 252761835, upload-time = "2026-03-17T22:03:45.584Z" },
@@ -2974,10 +2974,10 @@ name = "pydantic"
 version = "2.12.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "annotated-types" },
-    { name = "pydantic-core" },
-    { name = "typing-extensions" },
-    { name = "typing-inspection" },
+    { name = "annotated-types", marker = "platform_machine != 'riscv64'" },
+    { name = "pydantic-core", marker = "platform_machine != 'riscv64'" },
+    { name = "typing-extensions", marker = "platform_machine != 'riscv64'" },
+    { name = "typing-inspection", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/69/44/36f1a6e523abc58ae5f928898e4aca2e0ea509b5aa6f6f392a5d882be928/pydantic-2.12.5.tar.gz", hash = "sha256:4d351024c75c0f085a9febbb665ce8c0c6ec5d30e903bdb6394b7ede26aebb49", size = 821591, upload-time = "2025-11-26T15:11:46.471Z" }
 wheels = [
@@ -2989,7 +2989,7 @@ name = "pydantic-core"
 version = "2.41.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "typing-extensions" },
+    { name = "typing-extensions", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/71/70/23b021c950c2addd24ec408e9ab05d59b035b39d97cdc1130e1bce647bb6/pydantic_core-2.41.5.tar.gz", hash = "sha256:08daa51ea16ad373ffd5e7606252cc32f07bc72b28284b6bc9c6df804816476e", size = 460952, upload-time = "2025-11-04T13:43:49.098Z" }
 wheels = [
@@ -3280,7 +3280,7 @@ name = "python-engineio"
 version = "4.13.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "simple-websocket" },
+    { name = "simple-websocket", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/34/12/bdef9dbeedbe2cdeba2a2056ad27b1fb081557d34b69a97f574843462cae/python_engineio-4.13.1.tar.gz", hash = "sha256:0a853fcef52f5b345425d8c2b921ac85023a04dfcf75d7b74696c61e940fd066", size = 92348, upload-time = "2026-02-06T23:38:06.12Z" }
 wheels = [
@@ -3301,8 +3301,8 @@ name = "python-socketio"
 version = "5.16.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "bidict" },
-    { name = "python-engineio" },
+    { name = "bidict", marker = "platform_machine != 'riscv64'" },
+    { name = "python-engineio", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/59/81/cf8284f45e32efa18d3848ed82cdd4dcc1b657b082458fbe01ad3e1f2f8d/python_socketio-5.16.1.tar.gz", hash = "sha256:f863f98eacce81ceea2e742f6388e10ca3cdd0764be21d30d5196470edf5ea89", size = 128508, upload-time = "2026-02-06T23:42:07Z" }
 wheels = [
@@ -3420,7 +3420,7 @@ name = "redis"
 version = "7.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "async-timeout", marker = "python_full_version < '3.11.3'" },
+    { name = "async-timeout", marker = "python_full_version < '3.11.3' and platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/da/82/4d1a5279f6c1251d3d2a603a798a1137c657de9b12cfc1fba4858232c4d2/redis-7.3.0.tar.gz", hash = "sha256:4d1b768aafcf41b01022410b3cc4f15a07d9b3d6fe0c66fc967da2c88e551034", size = 4928081, upload-time = "2026-03-06T18:18:16.287Z" }
 wheels = [
@@ -3432,23 +3432,23 @@ name = "reflex"
 version = "0.8.28"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "alembic" },
-    { name = "click" },
-    { name = "granian", extra = ["reload"] },
-    { name = "httpx" },
-    { name = "packaging" },
-    { name = "platformdirs" },
-    { name = "psutil", marker = "sys_platform == 'win32'" },
-    { name = "pydantic" },
-    { name = "python-multipart" },
-    { name = "python-socketio" },
-    { name = "redis" },
-    { name = "reflex-hosting-cli" },
-    { name = "rich" },
-    { name = "sqlmodel" },
-    { name = "starlette" },
-    { name = "typing-extensions" },
-    { name = "wrapt" },
+    { name = "alembic", marker = "platform_machine != 'riscv64'" },
+    { name = "click", marker = "platform_machine != 'riscv64'" },
+    { name = "granian", extra = ["reload"], marker = "platform_machine != 'riscv64'" },
+    { name = "httpx", marker = "platform_machine != 'riscv64'" },
+    { name = "packaging", marker = "platform_machine != 'riscv64'" },
+    { name = "platformdirs", marker = "platform_machine != 'riscv64'" },
+    { name = "psutil", marker = "platform_machine != 'riscv64' and sys_platform == 'win32'" },
+    { name = "pydantic", marker = "platform_machine != 'riscv64'" },
+    { name = "python-multipart", marker = "platform_machine != 'riscv64'" },
+    { name = "python-socketio", marker = "platform_machine != 'riscv64'" },
+    { name = "redis", marker = "platform_machine != 'riscv64'" },
+    { name = "reflex-hosting-cli", marker = "platform_machine != 'riscv64'" },
+    { name = "rich", marker = "platform_machine != 'riscv64'" },
+    { name = "sqlmodel", marker = "platform_machine != 'riscv64'" },
+    { name = "starlette", marker = "platform_machine != 'riscv64'" },
+    { name = "typing-extensions", marker = "platform_machine != 'riscv64'" },
+    { name = "wrapt", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/87/85/ab69b3da57ced6928afe7d885537ca02d788338a638020adf246f9b8123b/reflex-0.8.28.tar.gz", hash = "sha256:25f1ec69a99258fdbf27552a47700a127d724dfd43259e66459bc6aa210081bd", size = 574441, upload-time = "2026-03-16T23:21:02.826Z" }
 wheels = [
@@ -3460,11 +3460,11 @@ name = "reflex-hosting-cli"
 version = "0.1.62"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "click" },
-    { name = "httpx" },
-    { name = "packaging" },
-    { name = "platformdirs" },
-    { name = "rich" },
+    { name = "click", marker = "platform_machine != 'riscv64'" },
+    { name = "httpx", marker = "platform_machine != 'riscv64'" },
+    { name = "packaging", marker = "platform_machine != 'riscv64'" },
+    { name = "platformdirs", marker = "platform_machine != 'riscv64'" },
+    { name = "rich", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/83/2f/6d9acd7afd3971da8f0cdef4824551b836ec66c598088fc1af3c16d6f7a4/reflex_hosting_cli-0.1.62.tar.gz", hash = "sha256:7a3ab872218a7ebdfa2ea186b83440322e658fa90cf7ea270aec1bafe1eb0d98", size = 35506, upload-time = "2026-03-10T01:12:14.131Z" }
 wheels = [
@@ -3473,7 +3473,7 @@ wheels = [
 
 [[package]]
 name = "requests"
-version = "2.32.5"
+version = "2.33.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
@@ -3481,9 +3481,9 @@ dependencies = [
     { name = "idna" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c9/74/b3ff8e6c8446842c3f5c837e9c3dfcfe2018ea6ecef224c710c85ef728f4/requests-2.32.5.tar.gz", hash = "sha256:dbba0bac56e100853db0ea71b82b4dfd5fe2bf6d3754a8893c3af500cec7d7cf", size = 134517, upload-time = "2025-08-18T20:46:02.573Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/34/64/8860370b167a9721e8956ae116825caff829224fbca0ca6e7bf8ddef8430/requests-2.33.0.tar.gz", hash = "sha256:c7ebc5e8b0f21837386ad0e1c8fe8b829fa5f544d8df3b2253bff14ef29d7652", size = 134232, upload-time = "2026-03-25T15:10:41.586Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl", hash = "sha256:2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6", size = 64738, upload-time = "2025-08-18T20:46:00.542Z" },
+    { url = "https://files.pythonhosted.org/packages/56/5d/c814546c2333ceea4ba42262d8c4d55763003e767fa169adc693bd524478/requests-2.33.0-py3-none-any.whl", hash = "sha256:3324635456fa185245e24865e810cecec7b4caf933d7eb133dcde67d48cee69b", size = 65017, upload-time = "2026-03-25T15:10:40.382Z" },
 ]
 
 [[package]]
@@ -3714,7 +3714,7 @@ name = "simple-websocket"
 version = "1.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "wsproto" },
+    { name = "wsproto", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/b0/d4/bfa032f961103eba93de583b161f0e6a5b63cebb8f2c7d0c6e6efe1e3d2e/simple_websocket-1.1.0.tar.gz", hash = "sha256:7939234e7aa067c534abdab3a9ed933ec9ce4691b0713c78acb195560aa52ae4", size = 17300, upload-time = "2024-10-10T22:39:31.412Z" }
 wheels = [
@@ -3980,8 +3980,8 @@ name = "sqlmodel"
 version = "0.0.37"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "pydantic" },
-    { name = "sqlalchemy" },
+    { name = "pydantic", marker = "platform_machine != 'riscv64'" },
+    { name = "sqlalchemy", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/fb/26/1d2faa0fd5a765267f49751de533adac6b9ff9366c7c6e7692df4f32230f/sqlmodel-0.0.37.tar.gz", hash = "sha256:d2c19327175794faf50b1ee31cc966764f55b1dedefc046450bc5741a3d68352", size = 85527, upload-time = "2026-02-21T16:39:47.038Z" }
 wheels = [
@@ -4002,8 +4002,8 @@ name = "starlette"
 version = "0.52.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "anyio" },
-    { name = "typing-extensions", marker = "python_full_version < '3.13'" },
+    { name = "anyio", marker = "platform_machine != 'riscv64'" },
+    { name = "typing-extensions", marker = "python_full_version < '3.13' and platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/c4/68/79977123bb7be889ad680d79a40f339082c1978b5cfcf62c2d8d196873ac/starlette-0.52.1.tar.gz", hash = "sha256:834edd1b0a23167694292e94f597773bc3f89f362be6effee198165a35d62933", size = 2653702, upload-time = "2026-01-18T13:34:11.062Z" }
 wheels = [
@@ -4422,7 +4422,7 @@ name = "typing-inspection"
 version = "0.4.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "typing-extensions" },
+    { name = "typing-extensions", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/55/e3/70399cb7dd41c10ac53367ae42139cf4b1ca5f36bb3dc6c9d33acdb43655/typing_inspection-0.4.2.tar.gz", hash = "sha256:ba561c48a67c5958007083d386c3295464928b01faa735ab8547c5692e87f464", size = 75949, upload-time = "2025-10-01T02:14:41.687Z" }
 wheels = [
@@ -4498,7 +4498,7 @@ name = "watchfiles"
 version = "1.1.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "anyio" },
+    { name = "anyio", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/c2/c9/8869df9b2a2d6c59d79220a4db37679e74f807c559ffe5265e08b227a210/watchfiles-1.1.1.tar.gz", hash = "sha256:a173cb5c16c4f40ab19cecf48a534c409f7ea983ab8fed0741304a1c0a31b3f2", size = 94440, upload-time = "2025-10-14T15:06:21.08Z" }
 wheels = [
@@ -4678,7 +4678,7 @@ name = "wsproto"
 version = "1.3.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "h11" },
+    { name = "h11", marker = "platform_machine != 'riscv64'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/c7/79/12135bdf8b9c9367b8701c2c19a14c913c120b882d50b014ca0d38083c2c/wsproto-1.3.2.tar.gz", hash = "sha256:b86885dcf294e15204919950f666e06ffc6c7c114ca900b060d6e16293528294", size = 50116, upload-time = "2025-11-20T18:18:01.871Z" }
 wheels = [
